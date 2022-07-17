@@ -23,8 +23,6 @@ public class Driver {
 
     private static WebDriver driver;
 
-    private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
-
     public static WebDriver getDriver() {
         if (driver == null) {
             if (System.getProperty("BROWSER") == null) {
